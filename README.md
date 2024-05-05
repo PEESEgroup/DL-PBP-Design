@@ -2,7 +2,7 @@
 Deep learning and optimization code to generate plastic binding peptides (PBPs)
 ## Overview
 - `camsol_calculation/` contains a script to compute the CamSol value for a given peptide
-- `data/` contains PepBD datasets for PE- and PS-binding used to train the deep learning model as well as a small sample dataset with 500 peptides and their predicted PepBD scores
+- `data/` contains PepBD datasets for PE- and PS-binding that are used to train the deep learning models as well as a small sample dataset with 500 peptides and their predicted PepBD scores for demonstration purpose
 - `examples/` contains jupyter notebooks to demonstrate how to run our model to generate peptides and how to perform SHAP analysis based on the trained score predictor
 - `peptide_generators/` contains the MCTS generators described in the paper
 - `score_predictors/` contains both the trained LSTM models for PE and PS binding prediction

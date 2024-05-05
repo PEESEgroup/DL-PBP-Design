@@ -5,7 +5,7 @@ Deep learning and optimization code to generate plastic binding peptides (PBPs)
 - `data/` contains PepBD datasets for PE- and PS-binding used to train the deep learning model as well as a small sample dataset with 500 peptides and their predicted PepBD scores
 - `examples/` contains jupyter notebooks to demonstrate how to run our model to generate peptides and how to perform SHAP analysis based on the trained score predictor
 - `peptide_generators/` contains the MCTS generators described in the paper
-- `score_predictors/` contains both trained LSTM models for PE and PS binding prediction
+- `score_predictors/` contains both the trained LSTM models for PE and PS binding prediction
 ## Package Requirements
 - python 3.8.2
 - pandas 1.4.1

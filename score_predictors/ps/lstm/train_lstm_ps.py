@@ -1,7 +1,6 @@
 # build and train the PepBD score predictor for PS-binding peptides
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import tensorflow as tf

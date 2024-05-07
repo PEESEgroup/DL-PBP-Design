@@ -13,4 +13,6 @@ Deep learning and optimization code to generate plastic binding peptides (PBPs)
 - scikit-learn 1.2.2
 - numpy 1.20.1
 - tensorflow 2.6.0
+## Citation
+TBD
 

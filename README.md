@@ -54,7 +54,7 @@ conda activate <environment_name>
 
 Detailed examples on how to use our model to generate PBPs with high affinity to plastics (PE/PS), high solubility in water, and favorable binding specificity can be found in the `run_mcts.ipynb` notebook located in the `/examples` directory.
 
-The notebook includes an example of generating PBPs that bind to PE without the three tryptophan constraint including a CamSol term with a scaling factor (SF) of 1.0. 10 PBPs with a PepBD score of around -50 are expected to be generated. The SF can be tuned to generate peptides with various solubility in water.
+The notebook includes an example of generating PBPs that bind to PE without the "three tryptophan constraint" including a CamSol term with a scaling factor (SF) of 1.0. 10 PBPs with a PepBD score of around -50 are expected to be generated. The SF can be tuned to generate peptides with various solubility in water.
 
 **To generate peptides with the "three tryptophan constraint":** Load `mcts_tryptophan_limits.py` in `/peptide_generators` instead of `mcts_camsol.py`
 

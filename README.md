@@ -84,7 +84,7 @@ Note: To design the peptides using a competing strategy as described in the pape
 
 Detailed example on how to perform SHAP analysis on peptides can be found in the `shap_explainer.ipynb` notebook located in the `examples/` directory. This example is run on a small sample dataset with 500 PE-binding peptides designed by our algorithm. This dataset can be found in `data/`.
 
-## Instruction for Use
+## Instructions for Use
 
 To reproduce the results in our paper, please refer to the jupyter notebooks in the `examples/` directory and follow the instructions in the [Demo](#demo) section for any variants introduced in the paper. 
 

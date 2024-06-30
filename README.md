@@ -102,8 +102,6 @@ journal = {},
 volume = {},
 number = {},
 pages = {},
-keywords = {},
 doi = {},
-url = {},
 abstract = {}}
 ```

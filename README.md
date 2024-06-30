@@ -52,17 +52,17 @@ conda activate <environment_name>
 
 ## Demo
 
-Detailed examples on how to use our model to generate PBPs with high affinity to plastics (PE/PS), high solubility in water, and favorable binding specificity can be found in the `run_mcts.ipynb` notebook located in the `/examples` directory.
+Detailed examples on how to use our model to generate PBPs with high affinity to plastics (PE/PS), high solubility in water, and favorable binding specificity can be found in the `run_mcts.ipynb` notebook located in the `examples/` directory.
 
 The notebook includes an example of generating PBPs that bind to PE without the "three tryptophan constraint" including a CamSol term with a scaling factor (SF) of 1.0. 10 PBPs with a PepBD score of around -50 are expected to be generated. The SF can be tuned to generate peptides with various solubility in water.
 
-**To generate peptides with the "three tryptophan constraint":** Load `mcts_tryptophan_limits.py` in `/peptide_generators` instead of `mcts_camsol.py`
+**To generate peptides with the "three tryptophan constraint":** Load `mcts_tryptophan_limits.py` in `peptide_generators/` instead of `mcts_camsol.py`
 
 ```
 from mcts_tryptophan_limits import Node, mcts
 ```
 
-**To generate peptides that preferentially bind to one plastic over another:** Load `mcts_competing_design.py` in `/peptide_generators` instead of `mcts_camsol.py`
+**To generate peptides that preferentially bind to one plastic over another:** Load `mcts_competing_design.py` in `peptide_generators/` instead of `mcts_camsol.py`
 
 ```
 from mcts_competing_design import Node, mcts
@@ -82,11 +82,11 @@ surrogate_model = keras.models.load_model('../score_predictors/ps/trained_model/
 
 Note: To design the peptides using a competing strategy as described in the paper, both models for PE and PS need to be loaded.
 
-Detailed example on how to perform SHAP analysis on peptides can be found in the `shap_explainer.ipynb` notebook located in the `/examples` directory. This example is run on a small sample dataset with 500 PE-binding peptides designed by our algorithm. This dataset can be found in `/data`.
+Detailed example on how to perform SHAP analysis on peptides can be found in the `shap_explainer.ipynb` notebook located in the `examples/` directory. This example is run on a small sample dataset with 500 PE-binding peptides designed by our algorithm. This dataset can be found in `data/`.
 
 ## Instruction for Use
 
-To reproduce the results in our paper, please refer to the jupyter notebooks in the `/example` folder and follow the instructions in the [Demo](#demo) section for any variants introduced in the paper. 
+To reproduce the results in our paper, please refer to the jupyter notebooks in the `examples/` directory and follow the instructions in the [Demo](#demo) section for any variants introduced in the paper. 
 
 Please note that due to the stochastic nature of the MCTS algorithm, it is impossible to generate exactly identical peptides in multiple runs, but the same distributions of peptide properties (predicted PepBD score, CamSol score, sequence patterns,  and SHAP values of the amino acids) in the paper are expected to be observed with the same design parameters.
 

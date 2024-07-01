@@ -90,7 +90,7 @@ To reproduce the results in our paper, please refer to the jupyter notebooks in 
 
 Please note that due to the stochastic nature of the MCTS algorithm, it is impossible to generate exactly identical peptides in multiple runs, but the same distributions of peptide properties (predicted PepBD score, CamSol score, sequence patterns,  and SHAP values of the amino acids) in the paper are expected to be observed with the same design parameters.
 
-The time for generating one peptide with the default setting (2,000 MCTS iterations) with our [testing system](#hardware-requirements) is approximately 80 seconds. Our models can also run on CPU but the inference time would be longer.
+The time for generating one peptide with the default setting (2,000 MCTS iterations) using our [testing system](#hardware-requirements) is approximately 80 seconds. The models can also be run on a CPU but the inference time would be longer.
 
 ## Citation
 
